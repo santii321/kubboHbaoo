@@ -1,0 +1,10 @@
+.nitro-right-side {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  min-width: 110px;
+  max-width: 110px;
+  height: calc(100% - #{$toolbar-height});
+  z-index: $rightside-zindex;
+  pointer-events: none;
+}

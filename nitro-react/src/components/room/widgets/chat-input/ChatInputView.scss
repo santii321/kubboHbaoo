@@ -1,0 +1,75 @@
+.nitro-chat-input-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 35px;
+    border-radius: 4px;
+    border: 2px solid #576160;
+    width: 100%;
+    overflow: hidden;
+
+    @include media-breakpoint-down(sm) {
+        display: flex;
+        position: absolute;
+        bottom: 70px;
+        left: calc(100% / 3);
+        width: 200px;
+    }
+
+
+    .input-sizer {
+        display: inline-grid;
+        vertical-align: top;
+        height: 100%;
+        padding: 0 15px;
+        background: white;
+        justify-content: flex-start;
+        
+        &::after,
+        input,
+        textarea {
+            width: auto;
+            min-width: 1em;
+            grid-area: 1 / 2;
+            margin: 0;
+            resize: none;
+            background: none;
+            appearance: none;
+            border: none;
+            outline: none;
+        }
+        
+        &::after {
+            content: attr(data-value) '  ';
+            visibility: hidden;
+            white-space: pre-wrap;
+        }
+    }
+
+    .bubble-container {
+        visibility: visible;
+        width: 75%;
+    }
+}
+
+.nitro-chat-style-selector-container {
+    width: $chat-input-style-selector-widget-width;
+    max-height: $chat-input-style-selector-widget-height;
+
+    .content-area {
+        max-height: $chat-input-style-selector-widget-height !important;
+    }
+
+    .bubble-parent-container {
+        height: 30px;
+
+        .bubble-container {
+            position: relative;
+            width: 50px;
+        }
+    }
+}
+.colorChat {
+    background: #101f2499;
+    padding: 5px;
+}

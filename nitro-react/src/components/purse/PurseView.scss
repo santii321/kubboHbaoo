@@ -1,0 +1,56 @@
+.nitro-purse-container {
+  font-size: $font-size-sm;
+  pointer-events: all;
+
+  .nitro-purse {
+    background-color: rgba($dark, 0.95);
+    box-shadow: inset 0px 5px lighten(rgba($dark, 0.6), 2.5),
+      inset 0 -4px darken(rgba($dark, 0.6), 4);
+
+    .nitro-purse-subscription {
+      background-color: rgba($light, 0.1);
+    }
+
+    .nitro-purse-button {
+      padding: 3px 2px;
+
+      &:hover {
+        background-color: rgba($light, 0.1);
+      }
+    }
+  }
+
+  .nitro-purse-seasonal-currency {
+    background-color: rgba($dark, 0.95);
+    box-shadow: inset 0px 5px lighten(rgba($dark, 0.6), 2.5),
+      inset 0 -4px darken(rgba($dark, 0.6), 4);
+  }
+}.nitro{
+    pointer-events: all;
+    z-index: 69;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2px;
+    border: 2px solid #1c323f;
+    background: repeating-linear-gradient(#3d5f6e, #3d5f6e 50%, #1c323f 50%, #1c323f 100%);
+    box-shadow: 0 0 0 2px #999999;
+}
+.flexUis{
+    pointer-events: all;
+    justify-content: flex-end;
+    gap: 5px;
+    border-radius: 3px;
+    padding: 1px;
+    overflow: visible;
+    background: #1c323f82;
+    box-shadow: 0 0 0 2px #ddddddad;
+}
+.flexUi{
+    justify-content: flex-end;
+    gap: 5px;
+    border-radius: 3px;
+    padding: 1px;
+    overflow: visible;
+    background: #1c323f82;
+    box-shadow: 0 0 0 2px #ddddddad;
+}
